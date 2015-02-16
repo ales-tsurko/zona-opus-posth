@@ -3,7 +3,9 @@ An interactive album by Kanstantsin Yaskou. Programmed by Ales Tsurko. There was
 
 Video preview: https://www.youtube.com/watch?v=mz6aypBjpGI
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/mz6aypBjpGI" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=mz6aypBjpGI
+" target="_blank"><img src="http://img.youtube.com/vi/mz6aypBjpGI/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # Instructions for current vesrion
 Just run Player.scd from SuperCollider.
