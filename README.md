@@ -7,7 +7,7 @@ Video preview:
 " target="_blank"><img src="http://img.youtube.com/vi/mz6aypBjpGI/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-# Instructions for current vesrion
+# Instructions for current version
 Just run Player.scd from SuperCollider.
 
 To close player window execute:
