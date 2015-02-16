@@ -5,4 +5,4 @@ Video preview: https://www.youtube.com/watch?v=mz6aypBjpGI
 # Instructions for current vesrion
 Just run Player.scd from SuperCollider.
 To close player window execute:
-Window.closeAll;
+`Window.closeAll;`
