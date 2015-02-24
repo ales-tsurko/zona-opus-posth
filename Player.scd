@@ -66,5 +66,3 @@ s.waitForBoot({
 	});
 });
 )
-
-Window.closeAll;

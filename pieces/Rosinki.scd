@@ -1,6 +1,5 @@
 AppClock.play(
 	Routine.run({
-// Создать группу для синтезатора и чистить всю эту группу после выхода
 		var samples, routine, controlSynth, ampBus, transposeBus, group,
 		densityMul, maximumDensityMul,
 		window,
