@@ -1,0 +1,11 @@
+//
+//  PrefixHeader.pch
+//  ZonaOpusPosth
+//
+//  Created by Ales Tsurko on 19.03.15.
+//  Copyright (c) 2015 Ales Tsurko. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#endif

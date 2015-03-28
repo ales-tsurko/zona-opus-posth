@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ZonaOpusPosth" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <viewController title="Igra Vodi" nibName="" id="bN9-Wp-Umt" customClass="IgraVodiViewController" customModule="ZonaOpusPosth">
+            <connections>
+                <outlet property="hiSlider" destination="xyb-XR-yCb" id="aLQ-9q-bJ8"/>
+                <outlet property="linkChannelsToggle" destination="NhL-B1-0ow" id="RNb-7L-nNC"/>
+                <outlet property="loSlider" destination="5Ma-M7-gY5" id="rk7-UU-T1d"/>
+                <outlet property="view" destination="hNG-Bq-Xjo" id="hao-Gj-6Yd"/>
+            </connections>
+        </viewController>
+        <viewController title="Forel" nibName="" id="mv4-f0-Yxg" customClass="ForelViewController" customModule="ZonaOpusPosth">
+            <connections>
+                <outlet property="firstTrackNumberBoxOct" destination="5Di-f1-hvx" id="Pw8-k9-QMe"/>
+                <outlet property="firstTrackStepperOct" destination="Wzp-aY-njJ" id="76C-0l-JSa"/>
+                <outlet property="pauseButton" destination="Pbx-Fi-qaA" id="Pqo-GD-lRB"/>
+                <outlet property="secondTrackNumberBoxOct" destination="p0k-Ra-b7j" id="fVi-8Q-5V8"/>
+                <outlet property="secondTrackStepperOct" destination="EIR-9g-PcY" id="N6P-5Z-mEb"/>
+                <outlet property="thirdTrackNumberBoxOct" destination="W3y-Xs-hH3" id="jjn-NB-K6d"/>
+                <outlet property="thirdTrackStepperOct" destination="8wT-Zw-SNu" id="udG-En-YD4"/>
+                <outlet property="view" destination="9Zl-pu-9J1" id="8R1-QM-6BM"/>
+                <outlet property="volumeSlider" destination="3DV-9G-vTm" id="TtU-Dd-W7L"/>
+                <outlet property="waveformView1" destination="aEW-2V-BbO" id="O5Y-DI-6Wr"/>
+                <outlet property="waveformView2" destination="4L6-zJ-fGS" id="HNs-Nd-sHn"/>
+                <outlet property="waveformView3" destination="3HF-nD-M03" id="VR8-a7-xHB"/>
+            </connections>
+        </viewController>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="ZonaOpusPosth" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="ZonaOpusPosth" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About ZonaOpusPosth" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide ZonaOpusPosth" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit ZonaOpusPosth" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="ZonaOpusPosth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="258" height="319"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="319"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4L2-Ua-NOD">
+                        <rect key="frame" x="20" y="270" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Igra vodi" bezelStyle="texturedSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="w1K-DL-6Ye">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="u4c-zg-SRf" id="rnI-X7-9Fd"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Dk-nH-T0g">
+                        <rect key="frame" x="20" y="235" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Forel" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T1e-H3-VJ2">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="kEB-Dt-h8G" id="yyc-ny-jAf"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vP-1K-8Xo">
+                        <rect key="frame" x="20" y="200" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Rosinki" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pT7-Xq-zjB">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="BhQ-gT-C3v" id="Bgv-kR-k9k"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KM8-ex-AFj">
+                        <rect key="frame" x="20" y="165" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Babochki" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qtj-Md-PoS">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="C0p-if-SNg" id="lyC-h8-Pao"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-rn-zOv">
+                        <rect key="frame" x="20" y="130" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Blumenstück" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N3s-sA-vwA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="tHh-FZ-Nd9" id="LSd-Vc-dfW"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rG4-AR-cX0">
+                        <rect key="frame" x="20" y="95" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Blushdayushchie ogni" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PzS-mP-soJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="vjC-xu-Zqw" id="Jca-qJ-Ktj"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncJ-dQ-u3A">
+                        <rect key="frame" x="20" y="60" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Shagi na snegu" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hUk-U7-wJj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="AoA-55-mKe" id="fQs-Zd-Mor"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcs-8b-7ak">
+                        <rect key="frame" x="20" y="25" width="218" height="30"/>
+                        <buttonCell key="cell" type="squareTextured" title="Viselitsa" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vzT-dO-0Fi">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="xQY-I2-TJ4" id="kZ8-9t-upS"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="87" y="300.5"/>
+        </window>
+        <window title="Igra vodi" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="u4c-zg-SRf" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="360" y="205" width="230" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="hNG-Bq-Xjo">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhL-B1-0ow">
+                        <rect key="frame" x="18" y="18" width="109" height="18"/>
+                        <buttonCell key="cell" type="check" title="Link Channels" bezelStyle="regularSquare" imagePosition="left" inset="2" id="GFx-HS-t9k">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="linkChannelsAction:" target="bN9-Wp-Umt" id="mXd-F1-y88"/>
+                        </connections>
+                    </button>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-gp-RRO">
+                        <rect key="frame" x="133" y="17" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="1uz-v5-2Zf">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="ujy-eb-1mY">
+                                <items>
+                                    <menuItem title="C/Am" id="fYp-wN-pup"/>
+                                    <menuItem title="Db/Bbm" id="al8-c7-wDm">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="Rt5-IF-kre">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="GvS-6Z-yqy">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="rGw-c1-s3o">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="eX1-0R-ovV">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="Tto-Y2-lWU">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="p1e-Re-MLI">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="Pz4-9g-ixh">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="mVd-Fw-KML">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="W1L-7N-ndF"/>
+                                    <menuItem title="B/G#m" id="LKZ-kk-O1E"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="transposeAction:" target="bN9-Wp-Umt" id="94U-CQ-CHE"/>
+                        </connections>
+                    </popUpButton>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-M7-gY5">
+                        <rect key="frame" x="51" y="78" width="21" height="404"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="right" sliderType="linear" id="tMU-dK-9eC"/>
+                        <connections>
+                            <action selector="loSliderAction:" target="bN9-Wp-Umt" id="QOj-7B-DAa"/>
+                        </connections>
+                    </slider>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-XR-yCb">
+                        <rect key="frame" x="159" y="78" width="21" height="404"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="right" sliderType="linear" id="rDc-RW-pfX"/>
+                        <connections>
+                            <action selector="hiSliderAction:" target="bN9-Wp-Umt" id="76H-Gg-egm"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djm-uw-qpl">
+                        <rect key="frame" x="51" y="56" width="20" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lo" id="6lY-ug-2vR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-UB-OUW">
+                        <rect key="frame" x="161" y="56" width="17" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hi" id="6MQ-EO-lV2">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="408" y="177"/>
+        </window>
+        <window title="Forel" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="kEB-Dt-h8G" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="242" width="800" height="462"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="9Zl-pu-9J1">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="462"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-9G-vTm">
+                        <rect key="frame" x="747" y="44" width="21" height="400"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="right" sliderType="linear" id="0UH-Mv-UEl"/>
+                        <connections>
+                            <action selector="volumeSliderAction:" target="mv4-f0-Yxg" id="PPw-FN-SWY"/>
+                        </connections>
+                    </slider>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9S-jr-xbg">
+                        <rect key="frame" x="110" y="18" width="100" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Reset" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zat-hT-OYL">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resetButonAction:" target="mv4-f0-Yxg" id="648-ag-Nud"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbx-Fi-qaA">
+                        <rect key="frame" x="218" y="18" width="106" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Paused" alternateTitle="Playing" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uAd-f9-W40">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="pauseButtonAction:" target="mv4-f0-Yxg" id="0dR-Uq-jBV"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-GQ-DcV">
+                        <rect key="frame" x="732" y="23" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="jXB-xz-skF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIR-9g-PcY">
+                        <rect key="frame" x="62" y="236" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-5" maxValue="5" doubleValue="-2" id="tfU-4b-Ks3"/>
+                        <connections>
+                            <action selector="secondOctChangeAction:" target="mv4-f0-Yxg" id="9Bg-Pq-PR7"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0k-Ra-b7j">
+                        <rect key="frame" x="28" y="239" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" bezelStyle="round" id="d6M-J8-u2Q">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="lyB-tE-Ux2">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="secondTrackNumberBoxAction:" target="mv4-f0-Yxg" id="HgV-Ez-Nip"/>
+                        </connections>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzp-aY-njJ">
+                        <rect key="frame" x="62" y="365" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-5" maxValue="5" doubleValue="-1" id="LgP-eW-Nkh"/>
+                        <connections>
+                            <action selector="firstOctChangeAction:" target="mv4-f0-Yxg" id="I8P-uX-HWb"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Di-f1-hvx">
+                        <rect key="frame" x="28" y="368" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" state="on" borderStyle="bezel" bezelStyle="round" id="u1n-YZ-bg4">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="NSJ-88-Tja">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="firstTrackNumberBoxAction:" target="mv4-f0-Yxg" id="f70-m8-usD"/>
+                        </connections>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wT-Zw-SNu">
+                        <rect key="frame" x="62" y="107" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-5" maxValue="5" doubleValue="-3" id="yRc-eI-Lam"/>
+                        <connections>
+                            <action selector="thirdOctChangeAction:" target="mv4-f0-Yxg" id="yBH-Kl-NiY"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3y-Xs-hH3">
+                        <rect key="frame" x="28" y="110" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Wxt-ep-fZ6">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="s18-Eh-Ylk">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="thirdTrackNumberBoxAction:" target="mv4-f0-Yxg" id="0cY-bP-3xO"/>
+                        </connections>
+                    </textField>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEW-2V-BbO" customClass="ZOWaveformView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="110" y="316" width="620" height="126"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HF-nD-M03" customClass="ZOWaveformView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="110" y="58" width="620" height="126"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-zJ-fGS" customClass="ZOWaveformView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="110" y="187" width="620" height="126"/>
+                    </customView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1455" y="359"/>
+        </window>
+        <window title="Rosinki" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="BhQ-gT-C3v" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="161" width="120" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="kFt-f0-4IW">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKm-ce-I0t">
+                        <rect key="frame" x="50" y="222" width="21" height="260"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="ZiD-uG-SCu"/>
+                    </slider>
+                    <customView toolTip="Density" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAV-XZ-3RC" customClass="ZOKnobView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="5" y="87" width="110" height="110"/>
+                    </customView>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-6R-IZv">
+                        <rect key="frame" x="23" y="20" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="CuG-Rn-gyb">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="fMh-sx-BLK">
+                                <items>
+                                    <menuItem title="D/Bm" id="ZBw-fe-ckp">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="dwn-vd-Z2A">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="POy-Pc-KL7">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="h0S-Ae-WYD">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="WeN-cN-SX5">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="EsY-sy-kw6">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="dGB-yx-Xud">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="VM3-ip-UHS">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="wHx-dj-kJz"/>
+                                    <menuItem title="B/G#m" id="2DJ-Mx-nwc"/>
+                                    <menuItem title="C/Am" id="aw4-NX-uML"/>
+                                    <menuItem title="Db/Bbm" id="VdV-kb-hl4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QB7-sR-tBG">
+                        <rect key="frame" x="36" y="200" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="JdY-0i-kht">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PwG-CL-WYy">
+                        <rect key="frame" x="36" y="62" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Density" id="v1P-hy-yIp">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="313" y="553"/>
+        </window>
+        <window title="Babochki" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="C0p-if-SNg" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="161" width="230" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="6b1-O5-rQV">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTA-jV-mUz">
+                        <rect key="frame" x="161" y="82" width="21" height="400"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="cM2-yc-bWd"/>
+                    </slider>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-wU-0we">
+                        <rect key="frame" x="60" y="264" width="21" height="218"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="100" tickMarkPosition="right" sliderType="linear" id="0bD-km-hKw"/>
+                    </slider>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZg-ta-wic">
+                        <rect key="frame" x="20" y="83" width="100" height="150"/>
+                        <buttonCell key="cell" type="squareTextured" title="Trigger" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Og8-pG-azW">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1L-6B-Oxq">
+                        <rect key="frame" x="146" y="60" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="lGm-yL-ehK">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-Ha-N4K">
+                        <rect key="frame" x="38" y="242" width="65" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Feedback" id="FXY-Qo-kUk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nbe-9g-m9d">
+                        <rect key="frame" x="54" y="17" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-2" maxValue="2" id="IGT-PJ-NTV"/>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="HKg-IX-fZt" id="foR-1M-0L6"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKg-IX-fZt">
+                        <rect key="frame" x="20" y="20" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" bezelStyle="round" id="1ma-k7-irp">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="LYH-Yx-W8K">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFl-yz-jag">
+                        <rect key="frame" x="133" y="20" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="NjL-fP-WX0">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="1CM-08-Kf9">
+                                <items>
+                                    <menuItem title="B/G#m" id="lfK-m7-hOO"/>
+                                    <menuItem title="C/Am" id="h1R-y8-8U3"/>
+                                    <menuItem title="Db/Bbm" id="edR-qA-oc9">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="43B-pN-G5o">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="cOR-jx-rRj">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="tQT-Di-1Ln">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="4Qz-bv-bMy">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="nTH-E5-bzs">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="4gt-fm-tDx">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="ze3-8q-ZNj">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="HSi-BQ-ECj">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="hWu-Rl-NIZ"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="656" y="462"/>
+        </window>
+        <window title="Blumenstück" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="tHh-FZ-Nd9" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="215" width="800" height="462"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="Dvz-37-cFX">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="462"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8G-GY-FtP">
+                        <rect key="frame" x="54" y="295" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-5" maxValue="5" doubleValue="3" id="4ei-Pj-hyA"/>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="HMh-l3-Yqv" id="4Ny-ki-Wkl"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HMh-l3-Yqv">
+                        <rect key="frame" x="20" y="298" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" bezelStyle="round" id="0yi-JN-wl1">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="8ro-pP-mHb">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDv-pb-A0d">
+                        <rect key="frame" x="57" y="18" width="100" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Reset" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aea-AL-Kw0">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k17-Zs-br2">
+                        <rect key="frame" x="165" y="18" width="106" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Paused" alternateTitle="Playing" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="A4r-Ub-0pD">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2y-RO-m68">
+                        <rect key="frame" x="279" y="25" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" title="A/F#m" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" selectedItem="wFR-Og-FYc" id="vUS-0E-IeP">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="I5l-ly-59G">
+                                <items>
+                                    <menuItem title="A/F#m" state="on" id="wFR-Og-FYc">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="zgH-IQ-DbT"/>
+                                    <menuItem title="B/G#m" id="bVj-O9-gG4"/>
+                                    <menuItem title="C/Am" id="mIg-ai-W5Y"/>
+                                    <menuItem title="Db/Bbm" id="Px0-hI-g9q">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="C5V-rY-RH6">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="D9C-yD-DQk">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="itL-ZG-PKj">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="3sW-uS-Vfc">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="Ogh-0I-KTp">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="aH5-hn-gA3">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="dNp-zo-7QH">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-Oc-gjq">
+                        <rect key="frame" x="700" y="174" width="21" height="270"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="JpG-vm-t7h"/>
+                    </slider>
+                    <customView toolTip="Direction Change Rate" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-3s-jSB" customClass="ZOKnobView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="655" y="34" width="110" height="110"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0x-Ir-XzM">
+                        <rect key="frame" x="685" y="152" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="xJR-UX-TEx">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zmr-EA-yWI">
+                        <rect key="frame" x="639" y="14" width="143" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Direction Change Rate" id="Lk0-RA-x1a">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="617" y="-212"/>
+        </window>
+        <window title="Blushdayushchie ogni" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="vjC-xu-Zqw" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="161" width="230" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="bC0-lu-w9c">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-gq-t28">
+                        <rect key="frame" x="131" y="82" width="21" height="131"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="TnL-0f-2ZI"/>
+                    </slider>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4D-NP-Hnm">
+                        <rect key="frame" x="33" y="82" width="21" height="400"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="x0L-M8-K0c"/>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p67-Y4-icX">
+                        <rect key="frame" x="18" y="60" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="bAR-em-UnW">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xel-t8-HVC">
+                        <rect key="frame" x="133" y="20" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="xIU-1e-TfA">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="Nhj-bw-yNx">
+                                <items>
+                                    <menuItem title="B/G#m" id="fUR-BX-eg3"/>
+                                    <menuItem title="C/Am" id="CDA-1D-ZAh"/>
+                                    <menuItem title="Db/Bbm" id="raa-d8-wIm">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="gUa-Bh-TG4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="2fd-By-sbW">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="Xy9-qZ-kaM">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="fd0-Ic-7G0">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="RjQ-51-EI8">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="LUH-ac-7SH">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="3gw-gW-MIm">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="Lhn-Ew-FWo">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="5wJ-NU-3Gf"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-If-Jvc">
+                        <rect key="frame" x="161" y="82" width="21" height="131"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="CQt-Sv-Dtb"/>
+                    </slider>
+                    <customView toolTip="Rate" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prj-MG-YWE" customClass="ZOKnobView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="100" y="370" width="110" height="110"/>
+                    </customView>
+                    <customView toolTip="Pan Rate" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMy-Do-e2v" customClass="ZOKnobView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="100" y="236" width="110" height="110"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0a2-mc-FNa">
+                        <rect key="frame" x="139" y="354" width="33" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rate" id="lRo-oX-OBf">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5B-eA-BqN">
+                        <rect key="frame" x="125" y="219" width="61" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Pan Rate" id="2vl-W7-D7Y">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="871" y="409"/>
+        </window>
+        <window title="Shagi na snegu" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="AoA-55-mKe" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="107" width="800" height="462"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="Ahn-xt-NKy">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="462"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDe-DN-wYF">
+                        <rect key="frame" x="704" y="174" width="21" height="270"/>
+                        <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="right" sliderType="linear" id="2Uf-KG-bqM"/>
+                    </slider>
+                    <customView toolTip="Dry/Wet" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-wC-9eh" customClass="ZOKnobView" customModule="ZonaOpusPosth">
+                        <rect key="frame" x="659" y="34" width="110" height="110"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-k0-VEE">
+                        <rect key="frame" x="689" y="152" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="Mmj-UL-0Uu">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="999-LB-lsL">
+                        <rect key="frame" x="54" y="295" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="-5" maxValue="5" doubleValue="-1" id="Uun-wG-An0"/>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="XS6-8F-haT" id="eAT-g2-Wam"/>
+                        </connections>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XS6-8F-haT">
+                        <rect key="frame" x="20" y="298" width="35" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" bezelStyle="round" id="vfy-3S-Oub">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="uSk-yi-7bw">
+                                <real key="minimum" value="-5"/>
+                                <real key="maximum" value="5"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ql-Fs-g4g">
+                        <rect key="frame" x="57" y="18" width="100" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Reset" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3hr-bD-Y8L">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-mx-OmX">
+                        <rect key="frame" x="165" y="18" width="106" height="33"/>
+                        <buttonCell key="cell" type="squareTextured" title="Paused" alternateTitle="Playing" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2eo-Ep-9VK">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9g-Ni-ZM1">
+                        <rect key="frame" x="687" y="14" width="54" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dry/Wet" id="LeZ-3s-AfH">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTK-Kg-J4k">
+                        <rect key="frame" x="279" y="25" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="PRq-3z-S0t">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="V0c-oR-YEC">
+                                <items>
+                                    <menuItem title="C/Am" id="o04-IU-Z8v"/>
+                                    <menuItem title="Db/Bbm" id="16Y-f7-c6M">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="nck-rY-xC3">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="PYp-zq-4EM">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E/C#m" id="W8m-RE-7mF">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="y9a-kY-X8t">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="4qS-PN-hLi">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="Y2q-UE-PED">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="ARk-ve-Gac">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="Bgi-M6-iqN">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="EAa-1S-jJn"/>
+                                    <menuItem title="B/G#m" id="YH4-YJ-CR0"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="transposeAction:" target="bN9-Wp-Umt" id="da2-TV-2hu"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1565" y="-212"/>
+        </window>
+        <window title="Viselitsa" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="xQY-I2-TJ4" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="360" y="277" width="120" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="EaN-3g-X8U">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7W-Gi-8Tq">
+                        <rect key="frame" x="50" y="104" width="21" height="378"/>
+                        <sliderCell key="cell" alignment="left" maxValue="1" tickMarkPosition="right" sliderType="linear" id="oft-gs-1fs"/>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDW-b8-Zdg">
+                        <rect key="frame" x="35" y="82" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume" id="3K8-fd-Ght">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-Ms-t0t">
+                        <rect key="frame" x="10" y="18" width="100" height="50"/>
+                        <buttonCell key="cell" type="squareTextured" title="Trigger" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xSj-qX-lYp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="433" y="479"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="gA8-Xe-zoK"/>
+    </objects>
+</document>
