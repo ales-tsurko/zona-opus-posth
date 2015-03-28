@@ -30,4 +30,4 @@ If you're not:
 4. Select all code and hit Shift+Enter (or Command(Ctrl)+Enter) or use a command from IDE menu to execute selected code.
 
 
-If you'll have problems with starting the SuperCollider server on Windows try to open IDE with admin privileges.
+If you'll have some problems with starting the SuperCollider server on Windows try to open IDE with admin privileges.
