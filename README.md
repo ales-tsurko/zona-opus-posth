@@ -25,9 +25,9 @@ If you're not:
 
 2. Download the source of Zona Opus Posth: https://github.com/AlesTsurko/zona-opus-posth/releases
 
-3. Open file Player.scd with SuperCollider (pathToYourUnpackedSource/src/SuperCollider/);
+3. In SuperCollider choose File->Open and select Player.scd from /path-to-your-unpacked-source/src/SuperCollider/;
 
-4. Select all code and hit shift+Enter (or use a command from IDE menu to execute selected code).
+4. Select all code and hit Shift+Enter (or Command(Ctrl)+Enter) or use a command from IDE menu to execute selected code.
 
 
 If you'll have problems with starting the SuperCollider server on Windows try to open IDE with admin privileges.
