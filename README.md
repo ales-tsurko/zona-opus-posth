@@ -1,7 +1,7 @@
 # Zona Opus Posth
 Zona Opus Posth is an interactive album. Originally written by Kanstantsin Yaskou the cycle of piano pieces has been interpreted in different ways. Those interpretations was programmed by Ales Tsurko.
 
-Currently there are three branches of Zona Opus Posth: this one, the web-app and the recorded album. The web version you can find here: <a href="http://alestsurko.by/zona-opus-posth" target="_blank">Zona Opus Posth</a>; and you can freely download the album here: soon.
+Currently there are three branches of Zona Opus Posth: this one, the web-app and the recorded album. The web version you can find <a href="http://alestsurko.by/zona-opus-posth" target="_blank">here</a> and you can freely download the album <a href="#">(soon)</a>.
 
 Original version programmed in SuperCollider. Xcode project contain a port to Swift.
 
@@ -30,4 +30,4 @@ If you're not:
 4. Select all code and hit Shift+Enter (or Command(Ctrl)+Enter) or use a command from IDE menu to execute selected code.
 
 
-If you'll have problems with starting the SuperCollider server on Windows try to open IDE with admin privileges.
+If you'll have some problems with starting the SuperCollider server on Windows try to open IDE with admin privileges.
