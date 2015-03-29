@@ -395,6 +395,50 @@
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-zJ-fGS" customClass="ZOWaveformView" customModule="ZonaOpusPosth">
                         <rect key="frame" x="110" y="187" width="620" height="126"/>
                     </customView>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-Og-r3k">
+                        <rect key="frame" x="332" y="25" width="77" height="21"/>
+                        <popUpButtonCell key="cell" type="bevel" title="E/C#m" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" selectedItem="w2t-H5-68E" id="c4S-e5-M1C">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="MKC-hF-SMT">
+                                <items>
+                                    <menuItem title="E/C#m" id="w2t-H5-68E">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F/Dm" id="wfw-6M-1NQ">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F#/D#m" id="ome-Jv-ByL">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G/Em" id="yxD-oe-eIE">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Ab/Fm" id="ko3-QZ-fKD">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A/F#m" id="CJC-WU-h1y">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bb/Gm" id="NY5-iA-fgb"/>
+                                    <menuItem title="B/G#m" id="CIz-q6-dsD"/>
+                                    <menuItem title="C/Am" state="on" id="i20-z2-WCx"/>
+                                    <menuItem title="Db/Bbm" id="V1h-Be-afC">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D/Bm" id="s6S-6U-txc">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Eb/Cm" id="Nqm-FA-iRV">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="transposeAction:" target="mv4-f0-Yxg" id="4Lu-ok-0yv"/>
+                        </connections>
+                    </popUpButton>
                 </subviews>
             </view>
             <point key="canvasLocation" x="1455" y="359"/>

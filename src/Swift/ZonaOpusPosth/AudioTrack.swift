@@ -10,8 +10,8 @@ import AVFoundation
 
 class AudioTrack: AKInstrument {
     var playingPosition = AKInstrumentProperty(value: 0)
-    var setPosition = AKInstrumentProperty(value: 0)
     var rate = AKInstrumentProperty(value: 1)
+    var transpose = AKInstrumentProperty(value: 1)
     var amplitude = AKInstrumentProperty(value: 0, minimum: 0, maximum: 1)
     
     override init() {
@@ -22,31 +22,44 @@ class AudioTrack: AKInstrument {
         self.init()
         
         addProperty(playingPosition)
-        addProperty(setPosition)
         addProperty(rate)
+        addProperty(transpose)
         addProperty(amplitude)
         
         let fileSR: Float = 44100
         let filePath = NSBundle.mainBundle().pathForResource(fileName, ofType: fileType)! as String
         let avAudioFile = AVAudioFile(forReading: NSURL(fileURLWithPath: filePath), error: nil)
         let sampleSize = avAudioFile.length
+        let fileLengthInSeconds = Float(sampleSize)/fileSR
+        
+        let note = Playback()
+        
+        addNoteProperty(note.startTime)
         
         let player = AKFileInput(filename: filePath)
         
-        player.speed = rate
+        player.startTime = note.startTime.scaledBy(akp(fileLengthInSeconds))
+        player.speed = rate.scaledBy(transpose)
         
         connect(player)
         
-        player.scaledBy(amplitude)
+        connect(AKAudioOutput(stereoAudioSource: player.scaledBy(amplitude)))
         
-        let phasorNormalRate = akp(1/(Float(sampleSize)/fileSR))
+        assignOutput(playingPosition, to: akp(64/(Float(sampleSize))).scaledBy(rate).scaledBy(transpose))
+    }
+}
+
+class Playback: AKNote {
+    var startTime = AKNoteProperty(value: 0, minimum: 0, maximum: 100000000)
+    
+    override init() {
+        super.init()
         
-        let phasor = AKPhasor(frequency: phasorNormalRate.scaledBy(rate), phase: 0.ak)
-        
-        connect(phasor)
-        
-        connect(AKAssignment(output: playingPosition, input: phasor))
-        
-        connect(AKAudioOutput(stereoAudioSource: player))
+        addProperty(startTime)
+    }
+    
+    convenience init(startTime: Float) {
+        self.init()
+        self.startTime.setValue(startTime)
     }
 }
