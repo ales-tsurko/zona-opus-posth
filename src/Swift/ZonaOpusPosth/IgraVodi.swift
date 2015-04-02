@@ -41,7 +41,7 @@ class IgraVodiSynth: AKInstrument {
         let dur = 1.ak
         let avgDur = 0.9.ak
         let freqVar = 0.ak
-        let freq = akp((fileSR / 2_097_152) * rate)
+        let freq = ((fileSR / 2_097_152) * rate).ak
         let ampMod = 0.ak
         let density = 7.ak
         
@@ -72,8 +72,8 @@ class IgraVodiSynth: AKInstrument {
         grainGeneratorLeftChannel.grainAmplitude = amplitude
         grainGeneratorRightChannel.grainAmplitude = amplitude
         
-        grainGeneratorLeftChannel.grainFrequency = transpose.scaledBy(freq)
-        grainGeneratorRightChannel.grainFrequency = transpose.scaledBy(freq)
+        grainGeneratorLeftChannel.grainFrequency = transpose * freq
+        grainGeneratorRightChannel.grainFrequency = transpose * freq
         
         connect(grainGeneratorLeftChannel)
         connect(grainGeneratorRightChannel)

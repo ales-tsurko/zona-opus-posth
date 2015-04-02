@@ -54,7 +54,7 @@
 		2B8AC1551AB99BC300DA496B /* viselitsa_006.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B8AC12D1AB99BC300DA496B /* viselitsa_006.wav */; };
 		2B8AC1561AB99BC300DA496B /* ZOKnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AC12E1AB99BC300DA496B /* ZOKnobView.swift */; };
 		2B8AC1571AB99BC300DA496B /* ZOUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AC12F1AB99BC300DA496B /* ZOUIElements.swift */; };
-		2B8AC15D1AB9B84B00DA496B /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AC15C1AB9B84B00DA496B /* Numbers.swift */; };
+		2B8AC15D1AB9B84B00DA496B /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AC15C1AB9B84B00DA496B /* Arithmetic.swift */; };
 		2BE146131AC3238600CECEBB /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE146121AC3238600CECEBB /* AudioTrack.swift */; };
 		2BF6D37A1AC59B9400A7478F /* AKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6D21A1AC59B9400A7478F /* AKEvent.m */; };
 		2BF6D37B1AC59B9400A7478F /* AKInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6D21D1AC59B9400A7478F /* AKInstrument.m */; };
@@ -280,7 +280,7 @@
 		2B8AC12D1AB99BC300DA496B /* viselitsa_006.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = viselitsa_006.wav; sourceTree = "<group>"; };
 		2B8AC12E1AB99BC300DA496B /* ZOKnobView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZOKnobView.swift; sourceTree = "<group>"; };
 		2B8AC12F1AB99BC300DA496B /* ZOUIElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZOUIElements.swift; sourceTree = "<group>"; };
-		2B8AC15C1AB9B84B00DA496B /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		2B8AC15C1AB9B84B00DA496B /* Arithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
 		2BE146121AC3238600CECEBB /* AudioTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		2BF6D2191AC59B9400A7478F /* AKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKEvent.h; sourceTree = "<group>"; };
 		2BF6D21A1AC59B9400A7478F /* AKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKEvent.m; sourceTree = "<group>"; };
@@ -653,7 +653,6 @@
 		2B8AC1021AB99BC300DA496B /* ZonaOpusPosth */ = {
 			isa = PBXGroup;
 			children = (
-				2B8AC15B1AB9B82700DA496B /* Extensions */,
 				2B8AC1591AB99BF100DA496B /* Instruments */,
 				2B8AC1581AB99BD300DA496B /* UIElements */,
 				2B8AC15A1AB99C0400DA496B /* ViewControllers */,
@@ -760,9 +759,10 @@
 		2B8AC15B1AB9B82700DA496B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2B8AC15C1AB9B84B00DA496B /* Numbers.swift */,
+				2B8AC15C1AB9B84B00DA496B /* Arithmetic.swift */,
 			);
 			name = Extensions;
+			path = ../../../ZonaOpusPosth;
 			sourceTree = "<group>";
 		};
 		2BF6D2171AC59B9400A7478F /* AudioKit */ = {
@@ -851,6 +851,7 @@
 			isa = PBXGroup;
 			children = (
 				2BF6D2631AC59B9400A7478F /* AudioKit.swift */,
+				2B8AC15B1AB9B82700DA496B /* Extensions */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -1695,7 +1696,7 @@
 				2BF6D39E1AC59B9400A7478F /* AKWarpedFFT.m in Sources */,
 				2BF6D3D51AC59B9400A7478F /* AKSimpleWaveGuideModel.m in Sources */,
 				2BF6D3EB1AC59B9400A7478F /* AKDCBlock.m in Sources */,
-				2B8AC15D1AB9B84B00DA496B /* Numbers.swift in Sources */,
+				2B8AC15D1AB9B84B00DA496B /* Arithmetic.swift in Sources */,
 				2BF6D40A1AC59B9400A7478F /* AKNoteProperty.m in Sources */,
 				2BF6D3FD1AC59B9400A7478F /* AKParallelCombLowPassFilterReverb.m in Sources */,
 				2BF6D3811AC59B9400A7478F /* AKSampler.m in Sources */,

@@ -29,8 +29,8 @@ class AudioTrack: AKInstrument {
         let fileSR: Float = 44100
         let filePath = NSBundle.mainBundle().pathForResource(fileName, ofType: fileType)! as String
         let avAudioFile = AVAudioFile(forReading: NSURL(fileURLWithPath: filePath), error: nil)
-        let sampleSize = avAudioFile.length
-        let fileLengthInSeconds = Float(sampleSize)/fileSR
+        let sampleSize = Float(avAudioFile.length)
+        let fileLengthInSeconds = sampleSize/fileSR
         
         let note = Playback()
         
@@ -38,14 +38,14 @@ class AudioTrack: AKInstrument {
         
         let player = AKFileInput(filename: filePath)
         
-        player.startTime = note.startTime.scaledBy(akp(fileLengthInSeconds))
-        player.speed = rate.scaledBy(transpose)
+        player.startTime = note.startTime * fileLengthInSeconds.ak
+        player.speed = rate * transpose
         
         connect(player)
         
         connect(AKAudioOutput(stereoAudioSource: player.scaledBy(amplitude)))
         
-        assignOutput(playingPosition, to: akp(64/(Float(sampleSize))).scaledBy(rate).scaledBy(transpose))
+        assignOutput(playingPosition, to: (64/sampleSize).ak * rate * transpose)
     }
 }
 

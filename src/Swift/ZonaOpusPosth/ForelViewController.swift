@@ -104,13 +104,12 @@ class ForelViewController: NSViewController {
         
         volumeSlider.floatValue = 0
         volumeSliderAction(volumeSlider)
-    }
-    
-    override func viewDidDisappear() {
-        super.viewDidDisappear()
-        
         pauseButton.state = 0
         pauseButtonAction(pauseButton)
+        
+        track1.playingPosition.setValue(0)
+        track2.playingPosition.setValue(0)
+        track3.playingPosition.setValue(0)
     }
     
     @IBAction func resetButonAction(sender: NSButton) {
