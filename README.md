@@ -3,7 +3,7 @@ Zona Opus Posth is an interactive album. Originally written by Kanstantsin Yasko
 
 Currently there are three branches of Zona Opus Posth: this one, the web-app and the recorded album. The web version you can find <a href="http://alestsurko.by/zona-opus-posth" target="_blank">here</a> and you can freely download the album <a href="https://sdnm.bandcamp.com/album/zona-opus-posth">here</a>.
 
-Original version programmed in SuperCollider. Xcode project contain a port to Swift.
+Original version programmed in SuperCollider. Xcode project contain an unfinished port to Swift.
 
 Video preview of SC-version:
 
