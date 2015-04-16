@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
@@ -397,12 +397,12 @@
                     </customView>
                     <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-Og-r3k">
                         <rect key="frame" x="332" y="25" width="77" height="21"/>
-                        <popUpButtonCell key="cell" type="bevel" title="E/C#m" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" selectedItem="w2t-H5-68E" id="c4S-e5-M1C">
+                        <popUpButtonCell key="cell" type="bevel" title="E/C#m" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" selectedItem="w2t-H5-68E" id="c4S-e5-M1C">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="MKC-hF-SMT">
                                 <items>
-                                    <menuItem title="E/C#m" id="w2t-H5-68E">
+                                    <menuItem title="E/C#m" state="on" id="w2t-H5-68E">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                     <menuItem title="F/Dm" id="wfw-6M-1NQ">
@@ -422,7 +422,7 @@
                                     </menuItem>
                                     <menuItem title="Bb/Gm" id="NY5-iA-fgb"/>
                                     <menuItem title="B/G#m" id="CIz-q6-dsD"/>
-                                    <menuItem title="C/Am" state="on" id="i20-z2-WCx"/>
+                                    <menuItem title="C/Am" id="i20-z2-WCx"/>
                                     <menuItem title="Db/Bbm" id="V1h-Be-afC">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>

@@ -114,20 +114,17 @@ class ForelViewController: NSViewController {
     
     @IBAction func resetButonAction(sender: NSButton) {
         playingPositionTrack1 = 0
-//        track1.stop()
+        track1.stop()
         playingPositionTrack2 = 0
-//        track2.stop()
+        track2.stop()
         playingPositionTrack3 = 0
-//        track3.stop()
+        track3.stop()
         
         track1.playingPosition.setValue(playingPositionTrack1)
         track2.playingPosition.setValue(playingPositionTrack2)
         track3.playingPosition.setValue(playingPositionTrack3)
-        
-        if(isPlaying == true) {
-            // нужно остановить перед тем, как запустить еще, потому что таким образом треки добавляются
-            // к тем, что уже играют.
-//            play()
+        if(pauseButton.state == 1) {
+            pauseButton.state = 0
         }
     }
     
