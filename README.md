@@ -13,7 +13,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # Instructions for SC-version
 
-If you're familiar with SuperCollider just run Player.scd from IDE. To close player window execute:
+If you're familiar with SuperCollider just run Player.scd from SC IDE. To close player window execute:
 
 ```SuperCollider
 Window.closeAll;
